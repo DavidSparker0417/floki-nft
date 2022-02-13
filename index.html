@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>The King of all NFT Flokis</title>
+
+	<!-- facncy box -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+	<!-- Bootstrap -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+	<!-- Main Style Sheet -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" href="css/animate.css">
+	
+	<!-- google Font  -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+	<!-- Font awesome -->
+	<script src="https://kit.fontawesome.com/6ff322857f.js" crossorigin="anonymous"></script>
+
+	<!-- Moralis API -->
+	<script src="component/web3/web3.min.js"></script>
+	<script src="component/walletconnect/web3-provider.min.js"></script>
+	<script src="component/moralis/moralis.js"></script>
+</head>
+
+<body>
+
+
+	<!-- *******navbar-part-start****** -->
+	<section id="navbar">
+		<nav class="navbar navbar-expand-lg">
+
+			<a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link " href="#hero">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#card">The Cards</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#roadmap">Roadmap</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#squad">Team</a>
+					</li>
+					<li class="nav-item">
+						<span><a class="nav-link" id="connect_to_wallet" logState ='0' href="#">WALLET CONNECT</a></span>
+					</li>
+				</ul>
+
+			</div> <!-- end container -->
+		</nav>
+	</section>
+
+	<!-- *******navbar-part-end****** -->
+
+	<section id="hero">
+		<div class="container">
+			<div class="hero-content">
+				<img src="images/crow1k.png" alt="crown">
+				<h2>THE KING OF ALL <br> NFT FLOKIS</h2>
+				<p>10,000 uniquely generated Flokis. The true King of Kings & King of all Flokis. Integrated and here to
+					stay until the end of time in the BSC-Universe.</p>
+				<a href="#" id="id_mint">MINT NOW</a>
+				<a href="#" id="id_reveal">REVEAL</a>
+			</div>
+			<div style = "text-align: center; margin-top: 20px;">
+				<h2 id = "count_of_minted"></h2>
+				</h2>
+			</div>
+		</div>
+	</section>
+
+	<section id="card" class="padd">
+		<div class="container">
+			<div class="card-box">
+				<!-- <div class="nav_button" id="next_butt">
+					<img src="images/arrow/arrow_left5.svg" />
+				</div> -->
+				<div class="jokercard card-different" id="floki1">
+					<img src="images/floki_king_res2.jpg" alt=""/>
+					<div class="car-left">
+						<img src="images/flokirodbig.png" alt=""/>
+					</div>
+				</div>
+				<div class="jokercard" id="floki2">
+					<img src="images/floki_queen_res.jpg" alt=""/>
+				</div>
+				<div class="jokercard" id="floki3">
+					<img src="images/joker_floki_res.jpg" alt=""/>
+				</div>
+
+				<!-- <div class="nav_button" id="next_butt">
+					<img src="images/arrow/arrow_right5.svg" />
+				</div> -->
+			</div>
+		</div>
+	</section>
+
+	<section id="video-content" class="padd">
+		<div class="container">
+			<div class="section-tilte">
+				<img src="images/icon.png" alt="">
+				<h3>PLAY THE CARDS</h3>
+				<h2>PROTECT YOUR KING !</h2>
+			</div>
+
+			<div class="video-bg">
+				<div class="video">
+					<a data-fancybox="video" id="play-video" class="video-play-button2"
+						href="https://www.youtube.com/watch?v=QY1Kt7HnnCw">
+						<span></span>
+					</a>
+				</div>
+			</div>
+
+			<div class="video-bottom">
+				<h2>MINT RARITIES</h2>
+				<div class="btn-all">
+					<div class="btn-box common">
+						<button disabled>COMMON</button>
+						<p>60%</p>
+					</div>
+					<div class="btn-box rare">
+						<button disabled>RARE</button>
+						<p>20%</p>
+					</div>
+					<div class="btn-box">
+						<button disabled>MYTHIC</button>
+						<p>15%</p>
+					</div>
+					<div class="btn-box legnda">
+						<button disabled>LEGENDARY</button>
+						<p>5%</p>
+					</div>
+				</div>
+			</div>
+
+		</div><!-- container -->
+	</section>
+
+
+	<section id="roadmap" class="padd">
+		<div class="container">
+			<div class="section-tilte">
+				<img src="images/icon2.png" alt="">
+				<h3>ROADMAP</h3>
+				<h2>FLOKI'S CONQUEST</h2>
+			</div>
+			<div class="work-content">
+
+				<div class="work-box">
+					<div class="work-left">
+						<img src="images/white_casttle.png" alt="">
+					</div>
+					<div class="work-right">
+						<h3><span>START:</span> A NEW HOME</h3>
+						<p>Start of the first Collection of NFTs. The King & Queen will grow their empire to rule the
+							entire BSC-NFT-Space.<br><br>
+							Different rarities of the first Collection will give the holder unique benefits and a right
+							to brag allowed by your Majesty.</p>
+					</div>
+					<div class="bor"></div>
+				</div>
+
+				<div class="work-box">
+					<div class="work-left">
+						<img src="images/potion_small.png" alt="">
+					</div>
+					<div class="work-right">
+						<h3><span>50% MINT:</span> DISEASE AND DESPAIR</h3>
+						<p>A horrible disease is spreading throughout the land of King Floki and his subjects are
+							quickly falling ill. A magic potion has been brewed by the mighty Wizard Merlin Inu.<br><br>
+							2,500 limited time magic potions NFTs which may protect the NFT from the plague (Special
+							Transformation) or infect them with the disease and horribly disfigure them (Mutation).</p>
+					</div>
+				</div>
+				<div class="work-box">
+					<div class="work-left">
+						<img src="images/fire.png" alt="">
+					</div>
+					<div class="work-right">
+						<h3><span>100% MINT: </span> CLINICAL TRIALS</h3>
+						<p>Merlin Inu has had more time to test his new potion and thinks he can heal all the infected
+							now. Potion either heals the diseased and adds a Special layer or kills the user (burn).</p>
+					</div>
+				</div>
+			</div>
+		</div><!-- container -->
+	</section>
+
+	<section id="squad">
+		<div class="container">
+			<div class="section-tilte">
+				<img src="images/icon3.png" alt="">
+				<h3>MEET THE TEAM</h3>
+				<h2>KING'S SQUAD</h2>
+			</div>
+			<div class="row mar-top">
+				<div class="col-md-4">
+					<div class="squad-box">
+						<img src="images/trav.png" alt="">
+						<i class="fab fa-twitter"></i>
+						<h3>TRAVLADD</h3>
+						<p> OWNER / COO</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="squad-box">
+						<img src="images/ben.png" alt="">
+						<i class="fab fa-twitter"></i>
+						<h3>BENSON</h3>
+						<p> OWNER / CEO</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="squad-box">
+						<img src="images/karola.png" alt="">
+						<i class="fab fa-twitter"></i>
+						<h3>KRAKOVIA </h3>
+						<p> OWNER / DEV</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="squad-box">
+						<img src="images/melon.png" alt="">
+						<i class="fab fa-twitter"></i>
+						<h3>MELONBOY </h3>
+						<p> UI / NFT</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="squad-box">
+						<img src="images/blacky.png" alt="">
+						<i class="fab fa-twitter"></i>
+						<h3>BLACKY </h3>
+						<p> DEVELOPER</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="squad-box">
+						<img src="images/jay.png" alt="">
+						<i class="fab fa-twitter"></i>
+						<h3>JAY </h3>
+						<p> MARKETING MANAGER</p>
+					</div>
+				</div>
+			</div>
+			<div class="btn-telegram">
+				<a href="#" disabled>JOIN TELEGRAM</a>
+			</div>
+		</div><!-- container -->
+	</section>
+
+	<section id="faq" class="padd">
+		<div class="container">
+			<div class="section-tilte">
+				<img src="images/icon4.png" alt="">
+				<h2>FAQ</h2>
+			</div>
+		</div>
+	</section>
+
+	<div id = 'awaiting' style = "display:none;">
+		<img src="images/awaiting.gif" alt="">
+	</div>
+
+	<div id = 'wallet_selector' class = "wallet-selector">
+		<div class="modal-content blur-back">
+			<div class="modal-select-close" id="wallet_selector_close">
+				<span class="modal-close" id="modal_close">&times</span>
+			</div>
+			<div class="modal-body">
+				<div class="wallet-item" id="metamask" href="#">
+					<div class="wallet-item-text">METAMASK</div>
+					<img src="images/wallet/metamask.png" width="40px" height="40px"/>
+				</div>
+				<div class="wallet-item" id="walletconnect">
+					<div class="wallet-item-text">WALLETCONNECT</div>
+					<img src="images/wallet/walletConnectIcon.svg" width="40px" height="40px"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- jquary-cdn-link -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	<!-- fancybox pluging- -->
+	<script src="js/jquery.fancybox.min.js"></script>
+
+	<!-- main.js -->
+	<script src="js/main.js"></script>
+</body>
+
+</html>

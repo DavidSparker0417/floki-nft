@@ -1,0 +1,94 @@
+@media screen and (max-width: 720px){
+
+ 
+    body{
+        background: url(../images/main-bg-mobile.jpg) center;
+        background-size: cover;
+    }
+    .for-desktop{
+        display: none;
+    }
+    .for-mobile{
+        display: block;
+    }
+    #navbar{
+        padding: 0;
+    }
+    .nav-item span a {
+     
+        padding: 10px 35px;
+        display: inline-block;
+        width: 195px;
+        text-align: center;
+    }
+    .navbar-nav{
+        width: 100%;
+    }
+    .active a{
+        display: inline-block;
+    }
+    .hero-content h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .hero-content p {
+        padding: 0 0px;
+        margin: 30px 0;
+    }
+    #card {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .card-box{
+        flex-direction: column;
+    }
+    .card-box{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .card {
+        margin-bottom: 30px;
+        border-radius: 20px;
+    }
+    .car-left img{
+        display: none;
+    }
+    #video-content{
+        width: 100%;
+    }
+    .section-tilte h3{
+        font-size: 24px;
+    }
+    .section-tilte h2{
+        font-size: 35px;
+        line-height: 40px;
+        margin-top: -20px;
+    }
+    .btn-all{
+        flex-direction: column;
+       
+    }
+    .btn-box {
+        text-align: center;
+        width: 100%;
+    }
+    .padd{
+        padding: 30px 0;
+    }
+    #roadmap{
+        width: 100%;
+    }
+    .work-right{
+        margin-left: 30px;
+        width: 80%;
+    }
+    .bor {
+        float: left;
+
+        height: 929px;
+
+        top: 13%;
+        left: 23px;
+    }
+}
+
